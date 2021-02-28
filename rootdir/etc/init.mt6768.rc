@@ -55,3 +55,9 @@ on boot
 # Disable AOSP RIL if MTK RIL is up
 on property:vendor.ril.mtk=1
     stop vendor.ril-daemon
+
+on late-fs
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-4
+    start vendor.configstore-hal
