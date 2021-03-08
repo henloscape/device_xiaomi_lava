@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/pixys_lava.mk
+   $(LOCAL_DIR)/awaken_lava.mk
 
 COMMON_LUNCH_CHOICES := \
-    pixys_lava-user \
-    pixys_lava-userdebug \
-    pixys_lava-eng
+    awaken_lava-user \
+    awaken_lava-userdebug \
+    awaken_lava-eng
