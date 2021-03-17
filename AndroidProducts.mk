@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/ancient_lava.mk
+   $(LOCAL_DIR)/statix_lava.mk
 
 COMMON_LUNCH_CHOICES := \
-    ancient_lava-user \
-    ancient_lava-userdebug \
-    ancient_lava-eng
+    statix_lava-user \
+    statix_lava-userdebug \
+    statix_lava-eng
