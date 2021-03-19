@@ -43,10 +43,10 @@ TARGET_VENDOR := xiaomi
 TARGET_VENDOR_PRODUCT_NAME := lava
 
 # Gapps
-$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
+ARROW_GAPPS := true
 
 # Safailnet
 PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="redfin-user 11 RQ1A.210205.004 7038034 release-keys"
