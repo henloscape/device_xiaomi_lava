@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/arrow_lava.mk
+   $(LOCAL_DIR)/pixys_lava.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_lava-user \
-    arrow_lava-userdebug \
-    arrow_lava-eng
+    pixys_lava-user \
+    pixys_lava-userdebug \
+    pixys_lava-eng

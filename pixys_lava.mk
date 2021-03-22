@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -33,10 +33,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := lava
-PRODUCT_NAME := arrow_lava
+PRODUCT_NAME := pixys_lava
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := xiaomi
-DEVICE_MAINTAINER := henloboi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR := xiaomi
@@ -46,7 +45,7 @@ TARGET_VENDOR_PRODUCT_NAME := lava
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
-ARROW_GAPPS := true
+BUILD_WITH_GAPPS := true 
 
 # Safailnet
 PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="redfin-user 11 RQ1A.210205.004 7038034 release-keys"
