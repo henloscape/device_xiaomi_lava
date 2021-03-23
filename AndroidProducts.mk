@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/pixys_lava.mk
+   $(LOCAL_DIR)/komodo_lava.mk
 
 COMMON_LUNCH_CHOICES := \
-    pixys_lava-user \
-    pixys_lava-userdebug \
-    pixys_lava-eng
+    komodo_lava-user \
+    komodo_lava-userdebug \
+    komodo_lava-eng
