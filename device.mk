@@ -35,10 +35,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libldacBT_dec
 
-# Camera
-PRODUCT_PACKAGES += \
-    GoogleCameraGo
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
