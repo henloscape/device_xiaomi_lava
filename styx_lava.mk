@@ -31,6 +31,9 @@ $(call inherit-product, vendor/styx/config/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
+# MIUI Camera
+$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := lava
 PRODUCT_NAME := styx_lava
