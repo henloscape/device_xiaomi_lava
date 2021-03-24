@@ -31,5 +31,7 @@ pwifi
 cd $ROOTDIR 
 mtkr 
 cd $ROOTDIR
+# DESCENDANT EDIT : PERMISSION FIX 
+git clone https://gitlab.com/project-404/android_external_motorola_faceunlock external/motorola/faceunlock 
 
 echo "patch done !"

@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/styx/config/common.mk)
+$(call inherit-product, vendor/descendant/config/common_full_phone.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -36,10 +36,9 @@ $(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := lava
-PRODUCT_NAME := styx_lava
+PRODUCT_NAME := descendant_lava
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := xiaomi
-STYX_BUILD_VARIANT := BETA
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR := xiaomi

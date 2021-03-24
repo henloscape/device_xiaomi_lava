@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/styx_lava.mk
+   $(LOCAL_DIR)/descendant_lava.mk
 
 COMMON_LUNCH_CHOICES := \
-    styx_lava-user \
-    styx_lava-userdebug \
-    styx_lava-eng
+    descendant_lava-user \
+    descendant_lava-userdebug \
+    descendant_lava-eng
