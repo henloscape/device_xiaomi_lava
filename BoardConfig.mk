@@ -19,6 +19,8 @@ DEVICE_PATH := device/xiaomi/lava
 # Broken shit
 BUILD_BROKEN_DUP_RULES := true
 SKIP_ABI_CHECKS := true 
+WITHOUT_CHECK_API=true
+SKIP_BOOT_JARS_CHECK=true
 
 # Architecture
 TARGET_ARCH := arm64
