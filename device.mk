@@ -28,16 +28,15 @@ $(call inherit-product, vendor/xiaomi/lava/lava-vendor.mk)
 # IMS
 $(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
 
+# Camera 
+$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
 
 # Bluetooth
 PRODUCT_PACKAGES += \
     libldacBT_dec
-
-# Camera
-PRODUCT_PACKAGES += \
-    GoogleCameraGo
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
