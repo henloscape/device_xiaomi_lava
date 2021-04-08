@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/descendant_lava.mk
+   $(LOCAL_DIR)/potato_lava.mk
 
 COMMON_LUNCH_CHOICES := \
-    descendant_lava-user \
-    descendant_lava-userdebug \
-    descendant_lava-eng
+    potato_lava-user \
+    potato_lava-userdebug \
+    potato_lava-eng
