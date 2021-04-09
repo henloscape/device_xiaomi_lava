@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/potato/config/common_full_phone.mk)
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
 #
 # All components inherited here go to system_ext image
@@ -36,7 +36,7 @@ $(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := lava
-PRODUCT_NAME := potato_lava
+PRODUCT_NAME := corvus_lava
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := xiaomi
 PRODUCT_MODEL := M2004J19C
@@ -55,3 +55,5 @@ IS_PHONE := true
 PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="redfin-user 11 RQ1A.210205.004 7038034 release-keys"
 BUILD_FINGERPRINT := google/redfin/redfin:11/RQ1A.210205.004/7038034:user/release-keys
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.corvus.maintainer=henloboi

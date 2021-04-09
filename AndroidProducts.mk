@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/potato_lava.mk
+   $(LOCAL_DIR)/corvus_lava.mk
 
 COMMON_LUNCH_CHOICES := \
-    potato_lava-user \
-    potato_lava-userdebug \
-    potato_lava-eng
+    corvus_lava-user \
+    corvus_lava-userdebug \
+    corvus_lava-eng
